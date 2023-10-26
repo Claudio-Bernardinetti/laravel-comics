@@ -1,1 +1,58 @@
 @import '~bootstrap/scss/bootstrap';
+
+$comics_primary: #0282f9;
+$comics_secondary: #ffffff;
+$comics_dark: #1c1c1c;
+$comics_dark_secondary: #303030;
+$comics_light: #696969;
+
+header {
+    padding-left: 2%;
+}
+
+#app_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $comics_secondary;
+    font-weight: bold;
+    font-size: 70%;
+  
+    .nav_img {
+       padding: 1rem;
+    }
+    .nav_tags  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+      .active {
+        
+        border-bottom: 4px solid $comics_primary;
+        
+        a {
+        color: $comics_primary;
+        }
+  
+      }
+  
+    }
+    .nav_tags div {
+      margin-left: 1rem;
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem;
+  
+    }
+  
+    a {
+      text-decoration: none;
+      color: $comics_dark;
+    }
+  
+  }
+  
+
+body {
+    background-color: aquamarine;
+}
