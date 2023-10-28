@@ -1,9 +1,7 @@
-@extends('layouts.app')
-
 <header id="app_header">
 
             <div class="nav_img">
-            {{-- <img src="../../../src/assets/img/dc-logo.png" width="60px" alt="">--}}
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
             </div>
             <div class="nav_tags">
                 <div><a href="#">CHARACTERS</a></div>
@@ -18,6 +16,6 @@
                 <div><a href="#">SHOP</a></div>
             </div>
           
-    </header>
+</header>
 
     

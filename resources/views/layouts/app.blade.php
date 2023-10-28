@@ -12,7 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    @vite('resources/js/app.js')
     
 
 </head>
@@ -23,18 +23,7 @@
     </header>
     @include('partials.header')
 
-    <main>
-    {{--
-        @yield('content')
-        --}}
-    </main>
-    {{--
-    @include('partials.footer')
-    --}}
-    <footer>
-
-    </footer>
-
+    
 </body>
 </html>
 
@@ -51,3 +40,18 @@
     <p>You are {{ $age }} years old.</p>
     --}}
     {{-- --}}
+
+    <main>
+        {{--
+            @yield('content')
+            --}}
+        </main>
+        
+        @include('partials.footerTop')
+        @include('partials.footerBottom')
+        
+        
+    <footer>
+    
+    </footer>
+    
