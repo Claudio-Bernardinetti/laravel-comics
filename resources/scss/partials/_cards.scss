@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+button {
+    background-color: $comics_primary;
+    color: $comics_secondary;
+    height: 2rem;
+  }

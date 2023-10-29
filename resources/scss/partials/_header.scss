@@ -1,8 +1,5 @@
 @use 'variables' as *;
-header {
-    padding-left: 2%;
 
-}
 #app_header {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +7,7 @@ header {
     align-items: center;
     background-color: $comics_secondary;
     font-weight: bold;
-    font-size: 70%;
+   
   
     .nav_img {
        padding: 1rem;

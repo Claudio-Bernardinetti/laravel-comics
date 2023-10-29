@@ -19,39 +19,23 @@
 <body>
 
     <header id="app_header">
-
+        @include('partials.header')
     </header>
-    @include('partials.header')
-
     
+    <main>
+        @include('partials.jumbo')
+        @include('partials.appComics')
+        @include('partials.blue')
+
+    </main>
+
+    <footer>
+        @include('partials.footerTop')
+        @include('partials.footerBottom')
+    </footer>
 </body>
 </html>
 
-{{--
-    <nav>
-        <ul>
-            <li><a href="{{ url('/') }}">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contacts">Contacts</a></li>
-        </ul>
-    </nav>
-    <h1>Hello World</h1>
-    <h1>{{$name}}</h1>
-    <p>You are {{ $age }} years old.</p>
-    --}}
-    {{-- --}}
 
-    <main>
-        {{--
-            @yield('content')
-            --}}
-        </main>
         
-        @include('partials.footerTop')
-        @include('partials.footerBottom')
-        
-        
-    <footer>
-    
-    </footer>
     

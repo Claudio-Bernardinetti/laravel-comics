@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
+
     return view('welcome');
-});
+
+})->name('welcome');
+
+
+Route::get('/comics', function () {
+
+    $comics = config('comics');
+
+    return view('appComics', compact('comics'));
+    
+})->name('comics');
